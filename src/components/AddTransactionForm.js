@@ -6,7 +6,7 @@ function AddTransactionForm() {
   const [category, setCategory] = useState("")
   const [amount, setAmount] = useState("")
   function handleSubmit(e) {
-    fetch("http://localhost:3000/transactions", {
+    fetch("https://json-server-vercel-2.vercel.app/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
